@@ -34,7 +34,7 @@ The visual processing part is written in Python v3.8 and uses the following pack
 - `serial` - used for serial communication with the Arduino board
 - `math` - used for trigonometric functions
 
-## How it runs
+## How it works
 The program created by `source.ino` is uploaded on the Arduino board. Immediately after execution, the servo will start spinning and the ultrasonic sensor will start measuring distances. If it detects an object, depending on its distance to the sensor, the buzzer will begin announcing the object's presence, similar to how parking sensors on a car work.
 
 The data collected by the Arduino is sent to the PC through serial communication and gets picked up by the small app (based on the `draw_radar.py` code). In a new window, the data will be mapped and displayed similar to a radar.
